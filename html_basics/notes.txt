@@ -11,4 +11,7 @@
 	to comment : <!--comment goes here-->
 
 // TABLES \\
-	
+	pretty much useless nowadays
+	<table>, dedans on met <tr> (table row)
+	chaque ligne (row) est un <tr>, dans le premier on met <th> (table header) pour le titre de la colone ou quoi
+	en ensuite dans d'autres <tr> on met des <td> avec les valeurd voulu
