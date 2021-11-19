@@ -15,3 +15,15 @@
 	<table>, dedans on met <tr> (table row)
 	chaque ligne (row) est un <tr>, dans le premier on met <th> (table header) pour le titre de la colone ou quoi
 	en ensuite dans d'autres <tr> on met des <td> avec les valeurd voulu
+
+// CLASS AND IDS \\ THIS ONE IS IMOPORTANT
+	en gros c'est un selecteur qui permet de marquer le code html pour plutars le styliser avec CSS
+	un id est un identifieur unique qu'on peut ajouter dans un tag (genre <h1 id=""></hi>)
+	use case for id == <h1 id="logo">Logo</h1> grave a ca dnas le css on peut cibler Logo particulierement
+	on peut avoir plusieurs id, mais leurs nom doivent etre unique
+
+	"class" c'est la meme chose, on l'ajoute dans un tag, mais on peut utiliser plusieurs fois
+	le meme nom. on peut avoir plusieurs class pour un element
+
+// HTML5 SEMANTICS \\
+	
