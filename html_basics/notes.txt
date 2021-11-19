@@ -26,4 +26,23 @@
 	le meme nom. on peut avoir plusieurs class pour un element
 
 // HTML5 SEMANTICS \\
-	
+	<div></div> est utiliser pour "contourer" les differente partie du site
+	le truc interessant c'est qu'on peut ajouter une class ou un id a un <div>
+	le <div> en soit n'a pas de sens (passer sa souris sur un <div> dans un fichier html)
+	il sert juste a grouper des elements ensemble (genre des images)
+	<span></span> est aussi "non semantic element"
+	alors que par exemple <form></form> EST semantic
+
+	le truc c'est de donner du sens au different element du code.
+
+	/!\ quick shortcut : type .nav puis tab et il te fait <div class="nav"> auto
+
+	donc tout ca se tient, plutot que d'ajouter class="x" dans tout les tags, on peut les grouper dans un <div>
+	et lui, lui donner une class.
+
+	ceci dit, depuis html5 il y a plus de tag semantic. on peut par exemple utiliser <header> directemetn
+
+// MORE SEMANTICS TAGS \\
+	pour remplacer des <div> meaningless, html5 a ajoute d'autre tag
+	<header>
+	<nav>
