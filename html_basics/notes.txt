@@ -36,6 +36,7 @@
 	le truc c'est de donner du sens au different element du code.
 
 	/!\ quick shortcut : type .nav puis tab et il te fait <div class="nav"> auto
+						same is true for .div
 
 	donc tout ca se tient, plutot que d'ajouter class="x" dans tout les tags, on peut les grouper dans un <div>
 	et lui, lui donner une class.
@@ -46,3 +47,17 @@
 	pour remplacer des <div> meaningless, html5 a ajoute d'autre tag
 	<header>
 	<nav>
+	<section> sert a separer les differente section de la page
+	<figure> pour encadre les <img>, on peut y mettre des tag <figcation>
+
+	<footer> sert au pied de la page, contact author, copyright tout 'ca
+	le <footer> va dans <body>, add it to all website
+
+	<aside> c'est pour mettre un truc sur le cote, ca doit avoir un lien avec la page
+
+	<article> c'est comme <section> mais c'est auto suffisant, ca doit avoir du sens tout seul
+	la ou section s'agence avce les autres section
+
+	<main> c'est la ou le gros de la page se passe
+	donc y a 3 grandes sections dans <body> : <header>, <main> et <footer>
+	ensuite dans le main on peut couper en differente <section> (articles, galeris)
