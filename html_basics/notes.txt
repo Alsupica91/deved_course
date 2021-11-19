@@ -1,0 +1,14 @@
+// LISTS \\
+	there is two types of lists : 1) order lists <ol> 2) unordered lists <ul>
+	dans ces tags on utilise ensuite <li> (list);
+	en general lese lists sont utilise pour les barres de nav (genre en haut des sites)
+	on peut bien entendu faire les listes dans les liste <ol> ou <ul> dans le sens qu'on veut
+	
+	on peut aussi mettre dans <li> un tag <a> (anchor) pour faire un lien
+
+// COMMENTS \\
+	comme pour tout les autres langages
+	to comment : <!--comment goes here-->
+
+// TABLES \\
+	
