@@ -1,9 +1,12 @@
-button {
-  padding: 40px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-h1 {
-  padding: 50px;
-  background-color: black;
-  color: white;
+div {
+  background: tomato;
+  color: cyan;
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
 }
