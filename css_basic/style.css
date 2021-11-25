@@ -8,7 +8,38 @@ html {
   font-size: 62.5%;
 }
 
-h1 {
-  background: lightblue;
-  height: 4rem;
+html, body {
+  height: 200%;
+}
+
+.container{
+  background: cadetblue;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 20%;
+  height: 5%;
+  background: cyan;
+}
+
+.box2 {
+  background: darkmagenta;
+}
+
+.box3 {
+  background-color: darksalmon;
+  position: sticky;
+  top: 0%
+}
+
+.box1 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
 }
