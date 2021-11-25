@@ -2,10 +2,14 @@ html {
   font-size: 62.5;
 }
 
-.text-section {
-  font-size: 1rem;
-}
-
-.text-section div {
-  font-size: 1rem;
+button {
+  margin: 10rem;
+  padding: 2rem 4rem;
+  background: none;
+  border: 0.3rem solid blue;
+  color: blue;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  border-top-left-radius: 3rem;
+  background: blueviolet;
 }
