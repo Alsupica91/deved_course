@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  padding: 2rem 4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: lightgreen;
+}
+
+button:focus {
+  background: red
+}
+
+h1 {
+  font-size: 4rem;
+}
