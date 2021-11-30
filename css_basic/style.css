@@ -8,38 +8,19 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  height: 200%;
+button {
+  padding: 2rem 4rem;
+  cursor: pointer;
 }
 
-.container{
-  background: cadetblue;
-  margin: auto;
-  width: 80%;
-  height: 80%;
-  position: relative;
+button:hover {
+  background: lightgreen;
 }
 
-.box1,
-.box2,
-.box3 {
-  width: 20%;
-  height: 5%;
-  background: cyan;
+button:focus {
+  background: red
 }
 
-.box2 {
-  background: darkmagenta;
-}
-
-.box3 {
-  background-color: darksalmon;
-  position: sticky;
-  top: 0%
-}
-
-.box1 {
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
+h1 {
+  font-size: 4rem;
 }
