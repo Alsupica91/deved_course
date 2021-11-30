@@ -7,3 +7,17 @@
 html {
   font-size: 62.5%;
 }
+
+div {
+  min-height: 50vh;
+  font-size: 2.4rem;
+}
+
+div h2 {
+}
+
+@media (max-width: 500px) {
+  body {
+    background: red;
+  }
+}
