@@ -8,19 +8,10 @@ html {
   font-size: 62.5%;
 }
 
-button {
-  padding: 2rem 4rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background: lightgreen;
-}
-
-button:focus {
-  background: red
+body {
+  background: lightgray;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
