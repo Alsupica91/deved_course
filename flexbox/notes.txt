@@ -1,0 +1,13 @@
+flexbox permet de mieux jouer avec les box
+
+en gros tu peux mettre un "display property of flex" au parent et ensuite l´utiliser sur tout ses enfants
+dans le fichier .css on peut ajouter display: flex dans un container
+par default, ca a un flex direction (row) et du coup on peut reverse et faire en column
+
+.container {
+  border: 3px solid black;
+  display: flex;
+}
+
+flex-warp: wrap; ==> par defaut c'est no-wrap et ca laisse tout les elem sur la meme ligne (quite a les ecraser)
+    mais avec wrap les elem passent a la ligne (et bien sur y a wrap reverse)

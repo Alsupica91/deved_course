@@ -7,3 +7,38 @@
 html {
   font-size: 62.5%;
 }
+
+.container {
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+}
+
+.box1 {
+  background: lightblue;
+}
+
+.box2 {
+  background: lightcoral;
+}
+
+.box3 {
+  background: lightcyan;
+}
+
+.box4 {
+  background: lightsalmon
+}
+
+.box5 {
+  background: lightgray;
+}
+
+.box6 {
+  background: lightgreen;
+}
