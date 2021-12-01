@@ -9,5 +9,34 @@ par default, ca a un flex direction (row) et du coup on peut reverse et faire en
   display: flex;
 }
 
-flex-warp: wrap; ==> par defaut c'est no-wrap et ca laisse tout les elem sur la meme ligne (quite a les ecraser)
+flex-direction: column; ==> par défaut sur row, on peut inverser, ce qui change le comportement d'autre truc en dessous
+
+flex-warp: wrap; ==> par defaut c'est nowrap et ca laisse tout les elem sur la meme ligne (quite a les ecraser)
     mais avec wrap les elem passent a la ligne (et bien sur y a wrap reverse)
+    
+justify-content: center; ==> sert a egaliser les boite au centre ou sur un cote (flex-star et flex-end)
+    on peut aussi l'utiliser avec space-around pour qu'il le justify en laissant des espaces entre les elem
+    et space-evenly pour faire pareil mais en prenant en compte les espaces avant et apres
+
+align-items: center; ==> Et justement ; c'est comme au dessus mais pour la vertical
+//ce qui est fort avec ces deux trucs c'est que si tu met toutes tes boites dans un jolie div="container"
+//tu peux ensuite utiliser .container et les vh pour  placer tes boites comme tu veux dans ta page
+    on peut utiliser stretch; pour que les element remplissent verticalement la boite
+        (donc tout les element dans .container vont jusqu'au bord, basé sur la hauteur)
+
+/!\ petite note : si on utilise column avec flex-direction, justify-content and align-items switch (logique puisque  basé sur le sens de flex)
+                  use win+arrow to reduce/expand active window
+  
+align-content: center; (+ les même autres options) lui  s'occupe de toutes les boites (j'suis perdu)
+    en fait j'ai l'impression que ca permet de faire space-between/around comme pour justify-content alors que j'ai
+    l'impression qu'avec align-item on pouvait pas
+    align-content semble surtout servir quand on est en flex-wrap: wrap; et que t'as des element qui se balade dans la page
+
+    _________________________________________________________________
+
+SECONDE PARTIE DU COURS -> individual modifications
+
+order: 1; ==> tant qu'un parent est en display: flex; on peut utiliser order: pour changer l'ordre de tout les elem
+        (je le ferai surement jamais comme ca parce qu'il suffit de changer dans le html mais why not)
+            (dans l'exemple il donne un ordre a toutes ses boites (order: 1; pour box1 etc))
+    
