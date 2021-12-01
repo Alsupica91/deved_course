@@ -11,12 +11,11 @@ html {
 .container {
   border: 3px solid black;
   display: flex;
-  flex-wrap: wrap;
-  height: 50vh;
 }
 
 .box {
   height: 10rem;
+  width: 10rem;
 }
 
 .box1 {
