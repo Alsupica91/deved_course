@@ -1,7 +1,17 @@
 où trouver toutes les images, fonts, et logos :
     for ICONS -> flaticon.com (icons are icon.svg)
+    for IMAGES -> pexels.com, unsplash.com (libre de droit high quality)
+        you might need to use photoshop/affinityphoto/gimp for contouring
+    for FONTS -> fontawesome.com
 
 dans le <head> dans <title> use | puor pas laisser titre solo
 to <head> we add <meta name="description" content="xxx"> ==> this is what shows on google search
 to <head> we add <meta name="robots" content="index,follow"> ==> this is to help bots reference the website
 to <head> we add <link rel="icon" href="./filename" /> to add a lil icon on the page browzer
+
+
+On the very top of style.css, don't forget to remove basic styling wiht * and html selector (use comments here to navigate easier)
+
+about <a> ==> on peut l'utiliser pour aller à un endroit predefini sur la même page
+
+the class .hero came from marketing to signal that it's the "main" deal of the page (-_-)
