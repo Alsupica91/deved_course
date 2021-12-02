@@ -99,8 +99,14 @@ nav ul {
     padding: 5rem;
 }
 
-@media screen and (max-width: 932px) {
-    body {
-        display: none;
+@media screen and (max-width: 933px) {
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
     }
 }
