@@ -2,7 +2,7 @@ où trouver toutes les images, fonts, et logos :
     for ICONS -> flaticon.com (icons are icon.svg)
     for IMAGES -> pexels.com, unsplash.com (libre de droit high quality)
         you might need to use photoshop/affinityphoto/gimp for contouring
-    for FONTS -> fontawesome.com
+    for FONTS -> fonts.google.com fontawesome.com
 
 dans le <head> dans <title> use | puor pas laisser titre solo
 to <head> we add <meta name="description" content="xxx"> ==> this is what shows on google search
@@ -15,3 +15,25 @@ On the very top of style.css, don't forget to remove basic styling wiht * and ht
 about <a> ==> on peut l'utiliser pour aller à un endroit predefini sur la même page
 
 the class .hero came from marketing to signal that it's the "main" deal of the page (-_-)
+
+/!\ rappelle sur vh => 10vh == 10% du screen (donc ća bouge quand le fenetre bouge)
+    alors que avec padding: x; le truc est fix (mais du coup moins portable)
+    c'est à ća que sert min-height: 10vh; la box va stretch mais ira jamais en dessous de 10% de la taille de l'écran
+        ensuite on peut y ajouter un peu de padding: 2rem; si on veut que ce soit plus large
+        ce qui lui donne une taille mini fix, alors qu'en vh
+    en vrai j'ai pas tout compris mais lui il bosse avec min-height en vh puis un peu de padding en rem
+
+de base c'est le text qui defini la taille de la page (notemment pour scroll)
+
+background-repeat: no-repeat; ==> de base si une image prend pas toute la place elle est dupliqué et c'est très laid
+background-size: cover; ==> zoom pour couvrir tout l'espace dispo et pas laisser de blanc
+background-position: center ==> good avec au dessus, use fois zoomé l'image est collé a gauche sinon
+
+on peut aussi ajouter un gradient a background :
+    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url(./img/landing-page.jpg);
+
+utiliser f12 sur navigateur pour voir a quelle taille PRECISEMENT le site devient moche
+    grace à ca on peut utiliser 
+        @media screen and (max-width: 932px) {
+            le code là n'est utilisé que quand max-width <= 932px    
