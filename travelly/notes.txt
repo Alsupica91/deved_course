@@ -1,1 +1,7 @@
-où trouver toutes les images, fonts, et logos
+où trouver toutes les images, fonts, et logos :
+    for ICONS -> flaticon.com (icons are icon.svg)
+
+dans le <head> dans <title> use | puor pas laisser titre solo
+to <head> we add <meta name="description" content="xxx"> ==> this is what shows on google search
+to <head> we add <meta name="robots" content="index,follow"> ==> this is to help bots reference the website
+to <head> we add <link rel="icon" href="./filename" /> to add a lil icon on the page browzer
