@@ -1,45 +1,35 @@
 /* Global Styles */
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 html {
     font-size: 62.5%;
 }
-
 body {
     font-family: "Poppins", sans-serif;
 }
-
 h1 {
     font-size: 2.6rem;
 }
-
 h2 {
     font-size: 4.8rem;
 }
-
 h3 {
     font-size: 3rem;
     font-weight: 400;
 }
-
 h4, h5 {
-    font-size: 2.8;
+    font-size: 2.8rem;
 }
-
 li, button, label, input, p{
     font-size: 2rem;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 button {
     padding: 2rem 6rem;
     background-color: #4c6e97;
@@ -49,18 +39,15 @@ button {
     cursor: pointer;
     transition: background 0.5s ease-in-out;
 }
-
 button:hover {
     background-color: #375070;
 }
 
 /* Nav section with Hero */
-
 .main-head {
     background: #131c27;
     color: white;
 }
-
 nav {
     display: flex;
     width: 90%;
@@ -70,7 +57,6 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 }
-
 nav ul {
     display: flex;
     flex: 1 1 40rem;
@@ -78,13 +64,11 @@ nav ul {
     align-items: center; /* deved met cette ligne puis la meme dans nav {} mais ca semble redondant */
     list-style: none;
 }
-
 #logo {
     font-family: "Pattaya", sans-serif;
     font-weight: 400;
     flex: 2 1 40rem;
 }
-
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./img/landing-page.jpg);
@@ -99,7 +83,6 @@ nav ul {
     justify-content: center;
     text-align: center;
 }
-
 .hero h3 {
     padding: 5rem;
 }
@@ -116,43 +99,35 @@ nav ul {
     position: relative;
     overflow: hidden;
 }
-
 .locations-head {
     width: 90%;
     margin: auto;
 }
-
 .locations-head h2 {
     padding: 1rem 0;
     text-decoration: underline;
     text-decoration-thickness: 0.5rem;
-
 }
-
 .locations-head h3 {
     padding: 4rem 0;
     background: linear-gradient(#131c27, #663b34);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .cloud {
     position: absolute;
     top: 0%;
     right: 0%;
 }
-
 .moving-cloud-1 {
     animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
-
 .moving-cloud-2 {
     top: 20%;
     z-index: -1;
     opacity: 0.5;
     animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
-
 @keyframes cloudAnimation {
     from {
         transform: translate(10%, -10%)
@@ -162,6 +137,43 @@ nav ul {
     }
 }
 
+/* Benefits section */
+.benefits-head {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.benefits-head h3 {
+    padding: 1rem;
+}
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+.card-icon {
+    background: rosybrown;
+}
 /* Media querrie */
 @media screen and (max-width: 933px) {
     html {

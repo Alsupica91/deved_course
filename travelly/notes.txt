@@ -36,4 +36,7 @@ on peut aussi ajouter un gradient a background :
 utiliser f12 sur navigateur pour voir a quelle taille PRECISEMENT le site devient moche
     grace à ca on peut utiliser 
         @media screen and (max-width: 932px) {
-            le code là n'est utilisé que quand max-width <= 932px    
+            le code là n'est utilisé que quand max-width <= 932px
+            
+box-shadow: 0px 10px 10px black;  ==> 1er arg: x-axis, 2eme: y-axis, blur, color
+    use rgba(0, 0, 0, 0.2) pour faire du noir transparent. Et on peut utiliser deux fois pour faire degrader
