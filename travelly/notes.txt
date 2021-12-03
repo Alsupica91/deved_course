@@ -44,3 +44,5 @@ box-shadow: 0px 10px 10px black;  ==> 1er arg: x-axis, 2eme: y-axis, blur, color
 DANS LE FOOTER DU SITE TRAVELLY FAUT METTRE DES LIENS VERS MES RESAUX (QUE JE N'AI PAS POUR L'INSTANT)
 
 /!\ quand on bosse pour des petits devices on peut enlever margin pour gagner de la place
+
+SUBMITING FORM: go to formspree.io
