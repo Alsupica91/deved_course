@@ -40,3 +40,7 @@ utiliser f12 sur navigateur pour voir a quelle taille PRECISEMENT le site devien
             
 box-shadow: 0px 10px 10px black;  ==> 1er arg: x-axis, 2eme: y-axis, blur, color
     use rgba(0, 0, 0, 0.2) pour faire du noir transparent. Et on peut utiliser deux fois pour faire degrader
+
+DANS LE FOOTER DU SITE TRAVELLY FAUT METTRE DES LIENS VERS MES RESAUX (QUE JE N'AI PAS POUR L'INSTANT)
+
+/!\ quand on bosse pour des petits devices on peut enlever margin pour gagner de la place
