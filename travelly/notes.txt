@@ -12,7 +12,8 @@ to <head> we add <link rel="icon" href="./filename" /> to add a lil icon on the 
 
 On the very top of style.css, don't forget to remove basic styling wiht * and html selector (use comments here to navigate easier)
 
-about <a> ==> on peut l'utiliser pour aller à un endroit predefini sur la même page
+about <a> ==> on peut l'utiliser pour aller à un endroit predefini sur la même page. Si t'as un id "locations"
+    tu peux mettre #locations dans ton <a>, en cliquant ca te tp où il faut 
 
 the class .hero came from marketing to signal that it's the "main" deal of the page (-_-)
 
