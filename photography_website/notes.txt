@@ -1,0 +1,15 @@
+pour déclarer une variable en css on fait : --variable: value;
+        ensuite pour l'utiliser on fait : padding: var(--header1);
+    peut servir pour couleur
+
+fluid font type:
+    on peut utiliser calc() avec une variable
+        --header1: calc(2rem + 1vw);
+            de cette maniere la variable est "fluide"
+    c'est comme ća qu'on fait du "mobile first"
+
+.flex class:
+    créer une classe .flex pour tout les elements où on utilisera flex, comme ća on écrit qu'une fois tout les basiques
+
+To add fonts localy:
+    
