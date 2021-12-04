@@ -8,8 +8,16 @@ fluid font type:
             de cette maniere la variable est "fluide"
     c'est comme ća qu'on fait du "mobile first"
 
-.flex class:
+.flex class: (also called helper class)
     créer une classe .flex pour tout les elements où on utilisera flex, comme ća on écrit qu'une fois tout les basiques
 
 To add fonts localy:
-    
+    @font-face {
+    font-family: 'Vibes';
+    src: url(./fonts/GreatVibes-Regular.ttf);
+}
+        then in body {} you  add font-family: "Vibes", sans-serif; (sans-serif c'est si le premier marche pas)
+
+quick reminder:
+    type .cequejeveux et entrer créer une div avec cequejeveux en class
+
