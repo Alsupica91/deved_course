@@ -47,3 +47,24 @@ DANS LE FOOTER DU SITE TRAVELLY FAUT METTRE DES LIENS VERS MES RESAUX (QUE JE N'
 /!\ quand on bosse pour des petits devices on peut enlever margin pour gagner de la place
 
 SUBMITING FORM: go to formspree.io
+
+_____________________ ABOUT ACCESSIBILITY _____________________
+
+On DOIT rendre le site accessible pour tous
+    notemment dans le htmlm c'est pour ća qu'on utilise <header> <nav> etc
+        ća sert pour les malvoyant utilisant un "reader" qui lui dit quand il est sur la nav, sur un lien etc
+    en revanche le reader ne sait pas ce qu'est une div.
+S'assurer dans <head> d'ajouter une langue, un titre avec micro description & le charset
+Voila la différence (qu'on avait pas compris à la base) entre le semantic et non semantic.
+ /!\   on peut par exemple ajouter un <main> qui prend tout sauf <header> et <footer>
+
+
+Utiliser du contrast entre les fonds et le text !
+    (encore, dans firefox f12, y a tout un segment pour l'accessibility)
+    check le contrast
+  s'assurer que les couleurs marchent pour daltonien
+  s'assurer que le site est navigable sans souris (use tab)
+    tab passe au <a>, <button>, <form> suivant
+    dans css ==> button:focus pour changer seulement quand l'elem est focus par tab
+dans le cas de long texte, pas aligner centre, laisser en bloc
+DONT USE PX FOR FONT SIZE, USE REM so user can zoom in and out

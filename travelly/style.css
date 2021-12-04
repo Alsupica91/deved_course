@@ -74,7 +74,7 @@ nav ul {
     flex: 2 1 40rem;
 }
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(./img/landing-page.jpg);
     min-height: 90vh;
     background-repeat: no-repeat;
@@ -174,6 +174,7 @@ nav ul {
 .card h4,
 .card p {
     padding: 1rem;
+    line-height: 1.8;
 }
 .cards img {
     max-width: 15%;
@@ -246,6 +247,10 @@ footer ul {
     flex: 1 1 40rem;
     justify-content: space-between;
     align-items: center;
+}
+
+button:focus {
+    background: #2c3f57;
 }
 
 /* Media querrie */
