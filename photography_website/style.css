@@ -15,6 +15,7 @@ html {
     --special-color: #906272;
     --background-color: #414141;
     --grey-text: #525252;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Ruhl';
@@ -164,8 +165,8 @@ nav {
     }
 }
 
-.burger,
-.menu-check {
+.burger {
+    cursor: pointer;
     display: none;
 }
 
@@ -338,32 +339,19 @@ footer h4 {
         align-items: center;
         transition: transform 1s ease;
     }
-    .menu-check {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        transform: translate(5%, -50%);
-        width: 5rem;
-        height: 5rem;
-        cursor: pointer;
-        z-index: 100;
-        opacity: 0;
-    }
-    .menu-check:checked + .nav-links {
+    .nav-open {
         transform: translateX(-100%);
     }
-    .menu-check:checked ~ .burger span {
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
         background: white;
     }
-    .menu-check:checked ~ .burger span:nth-child(1) {
-        transform: rotateZ(45deg) translateY(300%);
-    }
-    .menu-check:checked ~ .burger span:nth-child(2) {
+    .toggle .line2 {
         opacity: 0;
     }
-    .menu-check:checked ~ .burger span:nth-child(3) {
+    .toggle .line3 {
         transform: rotateZ(-45deg) translateY(-300%);
+        background: white;
     }
 
     /* About Section */
@@ -398,7 +386,6 @@ footer h4 {
         order: 1;
     }
 }
-
 @media screen and (min-width: 1700px) {
     html {
         --header1: 3rem;
