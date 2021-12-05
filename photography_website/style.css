@@ -234,7 +234,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background: var(--background-color);
+    background: rgba(65, 65, 65, 0.75);
     padding: 5rem 10rem;
     text-align: center;
 }
@@ -298,6 +298,11 @@ footer h4 {
 }
 
 /* Media Querries */
+@media screen and (max-width: 1041px) {
+    .contact img {
+        display: none;
+    }
+}
 @media screen and (max-width: 842px) {
     .hero {
         width: 100%;
