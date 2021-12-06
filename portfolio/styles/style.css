@@ -110,7 +110,7 @@ nav ul {
 }
 
 .intro {
-  min-height: 90vh;
+  min-height: 80vh;
   width: 90%;
   margin: auto;
   -ms-flex-wrap: wrap;
@@ -275,7 +275,7 @@ nav ul {
 .projects {
   width: 90%;
   margin: auto;
-  min-height: 90vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +319,6 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 3rem;
 }
 
 .form-section form {
