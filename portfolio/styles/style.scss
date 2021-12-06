@@ -1,3 +1,4 @@
+// VARIABLES
 $header1: 2.5rem;
 $header2: 4rem;
 $header3: 2.5rem;
@@ -7,6 +8,7 @@ $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #154353;
 $grey-text: #2c2c2c;
 
+// MIXINS
 @mixin flex($justify, $align, $direction) {
     display: flex;
     justify-content: $justify;
@@ -14,5 +16,58 @@ $grey-text: #2c2c2c;
     flex-direction: $direction;
 }
 
+// IMPORTS
 @import "global";
 @import "intro";
+
+
+// MEDIA QUERRIES
+@media screen and (max-width: 1373px) {
+    html {
+        font-size: 53%;
+   }
+   .splash {
+       display: none;
+   }
+   svg {
+       width: 80%;
+   }
+   nav {
+       width: 100%;
+   }
+}
+@media screen and (max-width: 763px) {
+    html {
+        font-size: 45%;
+    }
+    svg {
+        height: 60%;
+    }
+    .main-head {
+        width: 100%;
+    }
+    nav {
+        .logo {
+            @include flex(center, center, column);
+            flex: 1 1 20rem;
+            margin-top: 2rem;
+        }
+        ul {
+            flex: 1 1 60rem;
+            margin: 2rem 0rem;
+        }
+    }
+    .intro-text {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .intro-image {
+        text-align: center;
+    }
+    .intro-social {
+        @include flex(center, center, row);
+        a {
+            margin: 2rem;
+        }
+    }
+}
