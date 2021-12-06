@@ -1,42 +1,17 @@
-/* Global Styles */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%;
-    --header1: calc(2rem + 1vw);
-    --header2: calc(3.5rem + 1vw);
-    --header3: calc(3rem + 1vw);
-    --header4: calc(2.4rem + 1vw);
-    --text: calc(1.5rem + 1vw);
-    --big-text: calc(6rem + 1vw);
-    --special-color: #906272;
-    --background-color: #414141;
-    --grey-text: #525252;
-    scroll-behavior: smooth;
-}
-h1 {
-    font-size: var(--header1);
-}
-h2 {
-    font-size: var(--header2);
-}
-h3 {
-    font-size: var(--header3);
-}
-h4, h5 {
-    font-size: var(--header4);
-}
-li, button, label, input, p, a{
-    font-size: var(--text);
-}
-a {
-    text-decoration: none;
-    color: black;
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$grey-text: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
 }
 
-ul {
-    list-style: none;
-}
+@import "global";
