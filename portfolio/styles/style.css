@@ -1,0 +1,51 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.5rem + 1vw);
+  --big-text: calc(6rem + 1vw);
+  --special-color: #906272;
+  --background-color: #414141;
+  --grey-text: #525252;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4, h5 {
+  font-size: var(--header4);
+}
+
+li, button, label, input, p, a {
+  font-size: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
