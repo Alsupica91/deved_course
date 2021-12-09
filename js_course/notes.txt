@@ -26,3 +26,14 @@ let minute = null;
 
 //symbol
 const name = Symbol();
+
+//string concatenation
+const name = Krow
+const phrase = `Hello to our user ${name} !`
+
+
+Comparaisons are like C execpt == and ===
+11 == "11" in js returns TRUE
+11 === "11" return FALSE
+
+THAT'S WHY YOU NEVER USE ==
