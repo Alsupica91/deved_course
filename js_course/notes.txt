@@ -1,0 +1,28 @@
+// variables
+let inbox = 100;
+const user = "Krwo";
+
+//operators
+// en plus des normaux, on peut faire 10 ** 2 pour faire 10 puissance 2
+
+//Primitive Data Types
+
+// Numbers
+const day = 5;
+console.log(typeof day);
+
+//String
+const name = "Krow";
+
+// Booleans
+const isLogged = true;
+
+// Undefined
+const day; <== c' est une erreur puisque day est de type "undefined" est const peut pas l'etre
+let day; <== this works
+
+//Null
+let minute = null;
+
+//symbol
+const name = Symbol();
