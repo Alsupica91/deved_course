@@ -1,0 +1,7 @@
+DOM == Document Object Model
+	used to access html/css code through js
+it is an object oriented representation of your html/css code
+that you can access through the "document" object
+
+for exemple:
+	document.title = 'whatever' let's you change title of the page
