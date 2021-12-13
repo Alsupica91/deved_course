@@ -24,4 +24,3 @@ other difference :
 
 EVENTS:
 	when usr do something, exec code
-	events can be things like click, scroll, resizing the browzer
