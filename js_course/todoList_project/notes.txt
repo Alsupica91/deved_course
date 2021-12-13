@@ -1,0 +1,3 @@
+use cdnjs.com for... something I did not quite get it
+	use for Font Awesome, whatever that is
+<i> is for Icon, this is what the above is for
