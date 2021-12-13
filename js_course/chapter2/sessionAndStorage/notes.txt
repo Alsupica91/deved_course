@@ -1,0 +1,4 @@
+Event bubbling is for when multiple things happen at the same event
+(exemple of list removing one item AND toggling opacity from 0 to 100)
+
+when you click on a button for exemple, you click at the same time on the <body> the <html> etc
