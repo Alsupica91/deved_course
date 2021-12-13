@@ -3,13 +3,21 @@ const todoList = document.querySelector('#todo-list');
 const todoNr = document.querySelector('.todo-nr b');
 const items = todoList.children;
 const mainTitle = document.querySelector('.main-title');
+const nameInput = document.querySelector('.name-input');
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function(e) {
+	e.preventDefault();
+	//Create element
 	const newItem = document.createElement('li');
+	//Adding class
 	newItem.classList.add('item');
-	newItem.innerText = `Item ${items.length + 1}`;
+	//adding the text
+	newItem.innerText = nameInput.value;
 	todoList.appendChild(newItem);
 	todoNr.innerText = items.length;
+	//Delete input from value
+	nameInput.value = "";
+	//Create the element and attaching the listener
 	newItem.addEventListener('click', deleteItem);
 });
 
