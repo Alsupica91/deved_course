@@ -1,27 +1,4 @@
-DOM == Document Object Model
-	used to access html/css code through js
-it is an object oriented representation of your html/css code
-that you can access through the "document" object
+Event bubbling is for when multiple things happen at the same event
+(exemple of list removing one item AND toggling opacity from 0 to 100)
 
-for exemple:
-	document.title = 'whatever' let's you change title of the page
-
-difference between HTMLCollection and NodeList
-HTMLCollection can only have node "elements" (<h1>, <a>, class etc)
-where NodeList can also hold node text, node comment
-
-so with NodeList you can even get the actual text on your index.html
-use nodeItems.children to get elements only
-
-other difference :
-	querySellector does not "update" it's returned value if you make changes
-	so if you add new item, he keeps the array.length the same
-
-	but if you use .children method to a NodeList, it then returns an HTMLcollection
-	so no worries
-
-	so you can use querySellector with .children methods to easily change things
-
-EVENTS:
-	when usr do something, exec code
-	events can be things like click, scroll, resizing the browzer
+when you click on a button for exemple, you click at the same time on the <body> the <html> etc
