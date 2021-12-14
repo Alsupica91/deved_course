@@ -1,0 +1,31 @@
+difference between primitiv data-type and reference data-type
+
+primitiv: number, string, bolean, undefined, null
+reference: array, objects
+
+array are declared using [] | exemple : const names = ["Ed", "Me", "You"];
+objects are declared using {} | exemple :
+	const tweet = {
+		name: "Krow",
+		tweets: 20,
+		age: 28
+	};
+
+big difference:
+	if you const to declare variable, you can't change if primitiv
+	but if you have 3 names on your array, you can change the name
+		but you can't redefine the array itself
+
+	assigning value for primitiv is like in C.
+	whereas for reference type, they work like pointers in C
+		so for exemple :
+			const names = ["ed","you","me"];
+			const newNames = names;
+
+			if you change the array using newNames, it is changed for names too
+			because they point to the same address most likely
+
+			/!\ So the question is, how does that work in regard of scope ?
+				did the test and it's just like C !
+				if you modify the array using newNames in a if()
+				because it's a pointer, names will be modified too
