@@ -1,4 +1,4 @@
-difference between primitiv data-type and reference data-type
+difference between primitiv and reference data-type
 
 primitiv: number, string, bolean, undefined, null
 reference: array, objects
@@ -29,3 +29,11 @@ big difference:
 				did the test and it's just like C !
 				if you modify the array using newNames in a if()
 				because it's a pointer, names will be modified too
+
+CALLBACKS, HIGHER ORDER FUCNTIONS
+
+in the list.forEach(function (item) {xxx});
+ we see that item is declared and is auto incremented
+
+forEach is a higher order function: a function that takes a function as argument
+and a callback function is the function that is called as argument;
