@@ -23,6 +23,4 @@ let tweet = {
 let newTweet = tweet;
 newTweet.tweets++;
 
-tweet = newTweet;
-
 console.log(tweet);
