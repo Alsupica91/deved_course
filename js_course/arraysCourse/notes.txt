@@ -42,3 +42,16 @@ EXEMPLES OF HIGHER ORDER FUCNTIONS
 	forEach = loops in array and exec function for each elem
 	map = is the same but create a new array that can be returned
 		so the new array gets the values from the successiv returns
+
+GROSSE DIFFERENCE ENTRE FOREACH ET MAP /!\
+	ForEach change l'elem de base tandis que map fait une copie puis lui applique la fonction
+
+find function
+	prend aussi un return (comme map) mais aussi une condition, et return le premier elem
+	qui est true (exemple : return video.includes("html"); pourrait ret "mon tuto sur l'html" )
+
+filter function
+	la meme mais return plusieurs truc qui remplissent la condition, pas juste le premier
+
+Les fonctions peuvent etre enregistre dans une variable
+functions are objects
