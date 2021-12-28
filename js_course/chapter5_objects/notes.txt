@@ -1,0 +1,15 @@
+before any js is runned, browser runs the "global execution context"
+	the GEC create the "global object" and the "this" keyword
+
+this is where the malloc happens
+
+then comes the execution phase, and this is where the code is executed
+
+basicly what that means is that, like in C, function declaration should be at the top
+
+about scope :
+	when a variable is not define, the execution goes one scope higher till it finds the variable
+
+when you call a function, a new execution context is created with it's own keyword "this"
+	(just like how the stack works in C)
+	called Callstack in js
