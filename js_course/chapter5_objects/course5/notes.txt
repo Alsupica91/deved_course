@@ -1,0 +1,19 @@
+Bind, Call, Apply
+
+En JS les fn sont des objects speciaux
+
+toutes les fonctions ont acces a trois methods : Bind, Call, Apply
+
+Bind prend un objet et parenthese, qui devient le "this" de la higher order function appellant bind
+	exemple: registerUserl.bind(object);
+		ici, dans registerUser, on peut utiliser "this" pour recup ce que bind passe via son argument
+	du coup on peut ensuite utiliser this.randomFunction dans registerUser();
+
+	le truc c'est que je vois pas pourquoi pas juster passer un simple argument mais bon
+	le truc de bind c'est qu'on call pas la function, on "save" (j'capte rien)
+
+Call c'est la meme sauf que t'invoque direct, premier arg devient "this" et tu peux ajouter d'autres arg ensuite
+
+Apply c'est comme Call, mais on passe l'arg qui devient "this" et ensuite un array
+
+LA GROSSE DIFF C'EST QUE BIND APPELLE PAS LES AUTRES OUAIS
