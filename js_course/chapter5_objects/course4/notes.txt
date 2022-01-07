@@ -1,30 +1,19 @@
-Keyword THIS
-	is created in an execution context (either global execution context, or a function call)
+Bind, Call, Apply
 
-	IT IS A POINTER -> IT REFERS TO AN OBJECT
-	si "this" est call par une method, il fait reference a l'objet dans lequel se trouve la method
+En JS les fn sont des objects speciaux
 
-	"this gets set when your function is invoqued"
+toutes les fonctions ont acces a trois methods : Bind, Call, Apply
 
-	basicly, THIS, looks at what is at the left of the point, for exp: user.yell();
-		if there is a THIS if the yell method, it refers to "user"
-	
-	quand on utilise une arrow fn, "this" is not reset
+Bind prend un objet et parenthese, qui devient le "this" de la higher order function appellant bind
+	exemple: registerUserl.bind(object);
+		ici, dans registerUser, on peut utiliser "this" pour recup ce que bind passe via son argument
+	du coup on peut ensuite utiliser this.randomFunction dans registerUser();
 
-	/!\ arrow function DOES NOT get the "this" Keyword
-		regular methods do
+	le truc c'est que je vois pas pourquoi pas juster passer un simple argument mais bon
+	le truc de bind c'est qu'on call pas la function, on "save" (j'capte rien)
 
-Methods:
-	une fonction dans un objet est une "method"
-	exp: 
-		const user = {
-			name: 'Xander',
-			sayHi(){
-				console.log(this);
-			}
-		};
+Call c'est la meme sauf que t'invoque direct, premier arg devient "this" et tu peux ajouter d'autres arg ensuite
 
-/!\ On peut declarer une method en une ligne comme suit :
-	user.hi = sayHi;
-		dans cet exemple, il faut que sayHi soit deja defini bien sur, mais si c'est bien le cas,
-		une methode est ajouter (on peut donc bien sur l'ajouter a autant d'objet qu'on veut) 
+Apply c'est comme Call, mais on passe l'arg qui devient "this" et ensuite un array
+
+LA GROSSE DIFF C'EST QUE BIND APPELLE PAS LES AUTRES OUAIS

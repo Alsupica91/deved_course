@@ -1,14 +1,15 @@
-const user = {
-  name: "Xander",
-  videos: ["html", "css", "js", "react"],
-  //when you use methods in an object, use this syntax
-  greet() {
-    console.log(`Hello there ${this.name}`);
-    //ADD fn
-    const getVideos = () => {
-      console.log(`You currently have ${this.videos.length} videos`);
-    };
-    getVideos();
+const person = {
+  firstName: `Xander`,
+  lastName: `ouioui`,
+  getName() {
+    console.log(this.firstName + this.lastName);
   },
 };
-user.greet();
+
+function registerUser() {
+  //Aditional functionallity
+  this.getName();
+}
+
+const register = registerUser.bind(person);
+register();
