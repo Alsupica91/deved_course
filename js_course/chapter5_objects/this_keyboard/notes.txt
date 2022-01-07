@@ -1,0 +1,30 @@
+Keyword THIS
+	is created in an execution context (either global execution context, or a function call)
+
+	IT IS A POINTER -> IT REFERS TO AN OBJECT
+	si "this" est call par une method, il fait reference a l'objet dans lequel se trouve la method
+
+	"this gets set when your function is invoqued"
+
+	basicly, THIS, looks at what is at the left of the point, for exp: user.yell();
+		if there is a THIS if the yell method, it refers to "user"
+	
+	quand on utilise une arrow fn, "this" is not reset
+
+	/!\ arrow function DOES NOT get the "this" Keyword
+		regular methods do
+
+Methods:
+	une fonction dans un objet est une "method"
+	exp: 
+		const user = {
+			name: 'Xander',
+			sayHi(){
+				console.log(this);
+			}
+		};
+
+/!\ On peut declarer une method en une ligne comme suit :
+	user.hi = sayHi;
+		dans cet exemple, il faut que sayHi soit deja defini bien sur, mais si c'est bien le cas,
+		une methode est ajouter (on peut donc bien sur l'ajouter a autant d'objet qu'on veut) 
