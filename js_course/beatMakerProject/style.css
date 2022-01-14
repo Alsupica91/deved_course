@@ -71,7 +71,7 @@ svg {
 .controls button {
   padding: 1rem;
   border: none;
-  background: #86c2da;
+  background: #25363d;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -84,7 +84,7 @@ svg {
 .play {
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  background: #86c2da;
+  background: #25363d;
   color: white;
   border: none;
   cursor: pointer;
@@ -94,6 +94,10 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+.mute.active {
+  background: #6494a8;
 }
 
 /* KEYFRAMES */
