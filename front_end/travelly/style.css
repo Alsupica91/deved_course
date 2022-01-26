@@ -1,291 +1,296 @@
 /* Global Styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h1 {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 h2 {
-    font-size: 4.8rem;
+  font-size: 4.8rem;
 }
 h3 {
-    font-size: 3rem;
-    font-weight: 400;
+  font-size: 3rem;
+  font-weight: 400;
 }
-h4, h5 {
-    font-size: 2.8rem;
+h4,
+h5 {
+  font-size: 2.8rem;
 }
-li, button, label, input, p{
-    font-size: 2rem;
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
 }
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 button {
-    padding: 2rem 6rem;
-    background-color: #4c6e97;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: background 0.5s ease-in-out;
+  padding: 2rem 6rem;
+  background-color: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.5s ease-in-out;
 }
 button:hover {
-    background-color: #375070;
+  background-color: #375070;
 }
 
 /* Nav section with Hero */
 .main-head {
-    background: #131c27;
-    color: white;
-    position: sticky;
-    top: 0px;
-    z-index: 3;
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 nav {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    min-height: 10vh;
-    padding: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 nav ul {
-    display: flex;
-    flex: 1 1 40rem;
-    justify-content: space-around;
-    align-items: center; /* deved met cette ligne puis la meme dans nav {} mais ca semble redondant */
-    list-style: none;
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center; /* deved met cette ligne puis la meme dans nav {} mais ca semble redondant */
+  list-style: none;
 }
 #logo {
-    font-family: "Pattaya", sans-serif;
-    font-weight: 400;
-    flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  flex: 2 1 40rem;
 }
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(./img/landing-page.jpg);
-    min-height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .hero h3 {
-    padding: 5rem;
+  padding: 5rem;
 }
 
 /* Locations section */
 #locations {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./img/new-york-page.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .locations-head {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 .locations-head h2 {
-    padding: 1rem 0;
-    text-decoration: underline;
-    text-decoration-thickness: 0.5rem;
+  padding: 1rem 0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
 }
 .locations-head h3 {
-    padding: 4rem 0;
-    background: linear-gradient(#131c27, #663b34);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(#131c27, #663b34);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 4rem 0;
 }
 .cloud {
-    position: absolute;
-    top: 0%;
-    right: 0%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
 }
 .moving-cloud-1 {
-    animation: cloudAnimation 4s infinite alternate ease-in-out;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
 .moving-cloud-2 {
-    top: 20%;
-    z-index: -1;
-    opacity: 0.5;
-    animation: cloudAnimation 4s infinite alternate ease-in-out;
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
 @keyframes cloudAnimation {
-    from {
-        transform: translate(10%, -10%)
-    }
-    to {
-        transform: translate(0%, 0%);
-    }
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
 }
 
 /* Benefits section */
 .benefits-head {
-    background: #343c44;
-    padding: 3rem;
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 .benefits-head h3 {
-    padding: 1rem;
+  padding: 1rem;
 }
 .cards {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    min-height: 70vh;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .card {
-    flex: 1 1 25rem;
-    min-height: 40vh;
-    margin: 2rem 5rem;
-    text-align: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.2);
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.2);
 }
 .card h4,
 .card p {
-    padding: 1rem;
-    line-height: 1.8;
+  padding: 1rem;
+  line-height: 1.8;
 }
 .cards img {
-    max-width: 15%;
-    margin: 2rem;
+  max-width: 15%;
+  margin: 2rem;
 }
 .card-icon {
-    background: #27394e;
+  background: #27394e;
 }
 
 /* Contact section */
 #contact {
-    min-height: 92vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+  min-height: 92vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./img/contact-mountain.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form-wraper {
-    background: rgba(19, 28, 39, 0.8);
-    width: 60%;
-    color: white;
-    border-radius: 20px;
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
 }
 .form-head {
-    text-align: center;
-    padding: 4rem;
+  text-align: center;
+  padding: 4rem;
 }
 .name-form,
 .email-form {
-    padding: 3rem;
-    text-align: center;
+  padding: 3rem;
+  text-align: center;
 }
-.form-wraper label{
-    margin: 0rem 3rem;
+.form-wraper label {
+  margin: 0rem 3rem;
 }
 .form-wraper button {
-    width: 100%;
-    padding: 2rem;
-    margin-top: 8rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .form-wraper input {
-    padding: 1rem 3rem;
+  padding: 1rem 3rem;
 }
 
 /* Footer section */
 footer {
-    color: white;
-    background:rgba(19, 28, 39, 1);
+  color: white;
+  background: rgba(19, 28, 39, 1);
 }
 .footer-wraper {
-    display: flex;
-    padding: 2rem;
-    width: 90%;
-    margin: auto;
-    align-items: center;
-    min-height: 8vh;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 8vh;
+  flex-wrap: wrap;
 }
 footer h5 {
-    flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 footer ul {
-    display: flex;
-    list-style: none;
-    flex: 1 1 40rem;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 button:focus {
-    background: #2c3f57;
+  background: #2c3f57;
 }
 
 /* Media querrie */
 @media screen and (max-width: 933px) {
-    html {
-        font-size: 45%;
-    }
-    nav {
-        text-align: center;
-    }
-    #logo {
-        padding: 2rem;
-    }
-    .cloud {
-        height: 40rem;
-        pointer-events: none;
-    }
-    .moving-cloud-1 {
-        z-index: -1;
-    }
-    .moving-cloud-2 {
-        z-index: -2;
-    }
-    .locations-head h3 {
-        padding: 1rem;
-        background: rgba(19, 28, 39, 0.8);
-        -webkit-text-fill-color: white;
-    }
-    footer {
-        text-align: center;
-    }
-    footer h5 {
-        padding-bottom: 2rem;
-    }
-    .form-wraper {
-        width: 100%;
-    }
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    padding: 1rem;
+    background: rgba(19, 28, 39, 0.8);
+    -webkit-text-fill-color: white;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 2rem;
+  }
+  .form-wraper {
+    width: 100%;
+  }
 }
