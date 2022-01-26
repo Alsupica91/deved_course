@@ -298,7 +298,10 @@ nav ul {
   margin: 3rem;
 }
 
-.travelly, .elena {
+.travelly,
+.elena,
+.beatmaker,
+.todolist {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
